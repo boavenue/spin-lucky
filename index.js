@@ -47,6 +47,7 @@ $(document).ready(function () {
 				transform: "rotate(" + totalDegree + "deg)",
 			});
 		});
+		$(this).css("pointer-events", "none");
 
 		//Stop updates and show result when transition already ended:
 		setTimeout(function () {
@@ -76,6 +77,7 @@ $(document).ready(function () {
 				default:
 					break;
 			}
+			$("#spin").css("pointer-events", "");
 		}, 6100);
 	});
 });
